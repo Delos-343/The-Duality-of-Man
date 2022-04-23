@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Work+Sans&display=swap');
+
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: var(--secondary-font);
+  color: var(--color);
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg: #252a34;
+  --bg-dark: #1d1d1d;
+  --color: #eaeaea;
+  --light-color: #eaeaeaa4;
+  --primary-color: #08d9d6;
+  --secondary-color: #ff2e63;
+  --font: 'Crimson Text', serif;
+  --secondary-font: 'Ubuntu', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--color);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  margin: auto;
+}
+
+.duality {
+  width: 100%;
+  padding: 2em 0; margin: auto;
+  position: relative;
+  flex-direction: column;
+  background: #1a1a1a;
+  overflow-x: hidden;
+}
+
+.duality .duality-title {
+  margin-bottom: 0.4em;
+  font-size: 3em;
+  font-family: 'Monument Extended', sans-serif;
+}
+
+.duality .container {
+  width: 100%;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.duality .container-2 {
+  width: 100%;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.duality .container .main_box {
+  width: 35em; height: 20em;
+  margin: 1em 1em;
+  justify-content: space-evenly;
+  background: #000080;
+  box-shadow: 7px 15px 4px rgba(0, 0, 0, 0.25),
+              -3px -3px 2px rgba(205, 156, 156, 0.25);
+  border-radius: 25px;
+}
+
+.duality .container-2 .main_box {
+  width: 35em; height: 20em;
+  margin: 1em 1em;
+  justify-content: space-evenly;
+  background: #8b0000;
+  box-shadow: 7px 15px 4px rgba(0, 0, 0, 0.25),
+              -3px -3px 2px rgba(205, 156, 156, 0.25);
+  border-radius: 25px;
+}
+
+.duality .container .main_box .icon {
+  width: 2em; height: 150px;
+  margin-right: 0.2em;
+  font-size: 7em;
+}
+
+.duality .container .main_box .box {
+  width: 20em;
+  margin: 1em 2em 0 0.5em;
+  padding-right: 1em;
+  font-family: 'Monument Extended', sans-serif;
+}
+
+.duality .container .main_box .box :is(h1, p) {
+  margin-bottom: 1em;
+}
+
+.duality .container .main_box .box p {
+  opacity: 0.6;
+}
